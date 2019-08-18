@@ -1,0 +1,29 @@
+/*
+#
+#
+#
+# TOOL NAME:
+# WRITTEN BY: tacree
+# DATE:
+# REV:
+# First Worked:
+# Purpose:
+#
+# REV LIST:
+# BY:
+# DATE:
+# CHANGES MADE:
+#
+#
+#
+*/
+CREATE DATABASE PyCSV DEFAULT CHARACTER SET utf8;
+
+CREATE TABLE CVE (
+cve_id INTEGER NOT NULL AUTO_INCREMENT,
+name VARCHAR(30) UNIQUE NOT NULL KEY,
+verified_date DATE NOT NULL,
+vm_ip VARCHAR(30) UNIQUE,
+cve_fixed DATE KEY,
+PRIMARY KEY(cve_id, name)
+) ENGINE=InnoDB CHARACTER SET=utf8;
